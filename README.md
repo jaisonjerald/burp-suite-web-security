@@ -51,6 +51,28 @@ Throughout this project, I explored Burp Suite's core features, including interc
 - Compare HTTP Requests
 
 ---
+# 📂 Repository Structure
+
+```text
+burp-suite-web-security/
+│
+├── README.md
+├── LICENSE
+│
+└── screenshots/
+    ├── burp-suite-banner.png
+    ├── 01-docker-pull.png
+    ├── 02-docker-running.png
+    ├── 03-firefox-proxy.png
+    ├── 04-juice-shop-home.png
+    ├── 05-http-history.png
+    ├── 06-login-request.png
+    ├── 07-repeater.png
+    ├── 08-site-map.png
+    ├── 09-base64-encode.png
+    ├── 10-base64-decode.png
+    └── 11-comparer.png
+```
 
 # 📷 Lab Walkthrough
 
@@ -202,31 +224,6 @@ During this lab, I gained practical experience with Burp Suite Community Edition
 - JSON Requests
 - Proxy Interception
 - Traffic Analysis
-
----
-
-# 📂 Repository Structure
-
-```text
-burp-suite-web-security/
-│
-├── README.md
-├── LICENSE
-│
-└── screenshots/
-    ├── burp-suite-banner.png
-    ├── 01-docker-pull.png
-    ├── 02-docker-running.png
-    ├── 03-firefox-proxy.png
-    ├── 04-juice-shop-home.png
-    ├── 05-http-history.png
-    ├── 06-login-request.png
-    ├── 07-repeater.png
-    ├── 08-site-map.png
-    ├── 09-base64-encode.png
-    ├── 10-base64-decode.png
-    └── 11-comparer.png
-```
 
 ---
 
