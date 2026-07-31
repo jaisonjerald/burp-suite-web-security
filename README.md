@@ -1,63 +1,169 @@
 # Burp Suite Web Security Lab
 
-A hands-on web application security testing project demonstrating the use of **Burp Suite Community Edition** to analyze, intercept, and manipulate HTTP requests in a controlled lab environment using **OWASP Juice Shop**.
+<p align="center">
+  <img src="screenshots/burp-suite-banner.png" alt="Burp Suite Web Security Lab Banner" width="100%">
+</p>
+
+<p align="center">
+
+![Kali Linux](https://img.shields.io/badge/Kali-Linux-557C94?style=for-the-badge&logo=kalilinux)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-Community-F47B20?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![OWASP Juice Shop](https://img.shields.io/badge/OWASP-Juice_Shop-4CAF50?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+
+</p>
 
 ---
 
-## 📖 Project Overview
+## 📖 Overview
 
-This project demonstrates practical web application security testing techniques using Burp Suite Community Edition. The lab environment was built using Docker and OWASP Juice Shop, an intentionally vulnerable web application designed for security training.
+This repository documents my hands-on experience with **Burp Suite Community Edition** for web application security testing.
 
-The objective was to understand how Burp Suite can be used to intercept web traffic, inspect requests and responses, replay requests, analyze application structure, and perform data encoding/decoding.
+The lab environment was built using **Docker** and **OWASP Juice Shop**, an intentionally vulnerable web application designed for security training.
 
----
-
-## 🎯 Objectives
-
-- Deploy OWASP Juice Shop using Docker
-- Configure Firefox to use Burp Suite Proxy
-- Capture HTTP requests and responses
-- Analyze login requests
-- Replay requests using Repeater
-- Explore application endpoints using Site Map
-- Encode and decode data using Decoder
-- Compare HTTP requests using Comparer
-- Gain practical experience with web application security testing
+Throughout this project, I explored Burp Suite's core features, including intercepting HTTP traffic, inspecting requests and responses, replaying requests, comparing traffic, and encoding/decoding data.
 
 ---
 
 # 🛠️ Lab Environment
 
 | Component | Details |
-|------------|---------|
+|-----------|----------|
 | Operating System | Kali Linux |
-| Web Browser | Firefox ESR |
 | Proxy Tool | Burp Suite Community Edition |
 | Target Application | OWASP Juice Shop |
+| Browser | Firefox ESR |
 | Container Platform | Docker |
-| Communication Protocol | HTTP |
+
+---
+
+# 🎯 Objectives
+
+- Install Burp Suite Community Edition
+- Configure Firefox to use Burp Proxy
+- Deploy OWASP Juice Shop using Docker
+- Capture HTTP Requests
+- Analyze Web Traffic
+- Replay Requests using Repeater
+- Explore Site Map
+- Perform Base64 Encoding & Decoding
+- Compare HTTP Requests
+
+---
+
+# 📷 Lab Walkthrough
+
+## 1️⃣ Pull OWASP Juice Shop Docker Image
+
+<img src="screenshots/01-docker-pull.png" width="100%">
+
+---
+
+## 2️⃣ Run Docker Container
+
+<img src="screenshots/02-docker-running.png" width="100%">
+
+---
+
+## 3️⃣ Configure Firefox Proxy
+
+<img src="screenshots/03-firefox-proxy.png" width="100%">
+
+---
+
+## 4️⃣ Launch OWASP Juice Shop
+
+<img src="screenshots/04-juice-shop-home.png" width="100%">
+
+---
+
+## 5️⃣ Capture HTTP Requests
+
+<img src="screenshots/05-http-history.png" width="100%">
+
+---
+
+## 6️⃣ Capture Login Request
+
+<img src="screenshots/06-login-request.png" width="100%">
+
+---
+
+## 7️⃣ Replay Request using Repeater
+
+<img src="screenshots/07-repeater.png" width="100%">
+
+---
+
+## 8️⃣ Explore Site Map
+
+<img src="screenshots/08-site-map.png" width="100%">
+
+---
+
+## 9️⃣ Base64 Encoding
+
+<img src="screenshots/09-base64-encode.png" width="100%">
+
+---
+
+## 🔟 Base64 Decoding
+
+<img src="screenshots/10-base64-decode.png" width="100%">
+
+---
+
+## 1️⃣1️⃣ Compare HTTP Requests
+
+<img src="screenshots/11-comparer.png" width="100%">
+
+---
+
+# 🔑 Burp Suite Features Covered
+
+- ✅ Proxy
+- ✅ HTTP History
+- ✅ Site Map
+- ✅ Repeater
+- ✅ Decoder
+- ✅ Comparer
 
 ---
 
 # 🧰 Tools Used
 
 - Burp Suite Community Edition
-- OWASP Juice Shop
-- Docker
-- Firefox ESR
 - Kali Linux
+- Firefox ESR
+- Docker
+- OWASP Juice Shop
+
+---
+
+# 📚 Skills Gained
+
+- Web Application Security Testing
+- HTTP Request Analysis
+- HTTP Response Analysis
+- Web Proxy Configuration
+- Docker Container Deployment
+- Burp Suite Workflow
+- Base64 Encoding & Decoding
+- HTTP Traffic Inspection
 
 ---
 
 # 📂 Repository Structure
 
 ```text
-burpsuite-web-security-lab/
+burp-suite-web-security/
 │
 ├── README.md
 ├── LICENSE
 │
 └── screenshots/
+    ├── burp-suite-banner.png
     ├── 01-docker-pull.png
     ├── 02-docker-running.png
     ├── 03-firefox-proxy.png
@@ -73,221 +179,34 @@ burpsuite-web-security-lab/
 
 ---
 
-# 🚀 Workflow
-
-## Step 1 — Pull OWASP Juice Shop Docker Image
-
-Downloaded the vulnerable web application from Docker Hub.
-
-**Screenshot**
-
-![Docker Pull](screenshots/01-docker-pull.png)
-
----
-
-## Step 2 — Start the Docker Container
-
-Started the Juice Shop container and exposed port **3000**.
-
-**Screenshot**
-
-![Docker Running](screenshots/02-docker-running.png)
-
----
-
-## Step 3 — Configure Firefox Proxy
-
-Configured Firefox to forward HTTP and HTTPS traffic through Burp Suite using **127.0.0.1:8080**.
-
-**Screenshot**
-
-![Firefox Proxy](screenshots/03-firefox-proxy.png)
-
----
-
-## Step 4 — Launch OWASP Juice Shop
-
-Successfully accessed the target application.
-
-**Screenshot**
-
-![Juice Shop](screenshots/04-juice-shop-home.png)
-
----
-
-## Step 5 — Capture HTTP Requests
-
-Observed incoming and outgoing HTTP requests using Burp Suite's HTTP History.
-
-Captured information included:
-
-- GET requests
-- POST requests
-- HTTP headers
-- JSON responses
-- Status codes
-
-**Screenshot**
-
-![HTTP History](screenshots/05-http-history.png)
-
----
-
-## Step 6 — Capture Login Request
-
-Captured the login POST request and inspected the JSON payload.
-
-Observed:
-
-- Login endpoint
-- Email parameter
-- Password parameter
-- Request headers
-- Cookies
-- JSON request body
-
-**Screenshot**
-
-![Login Request](screenshots/06-login-request.png)
-
----
-
-## Step 7 — Replay Request Using Repeater
-
-Sent the captured login request to Burp Repeater for manual testing and replay.
-
-This feature allows security testers to modify and resend requests to observe server responses.
-
-**Screenshot**
-
-![Repeater](screenshots/07-repeater.png)
-
----
-
-## Step 8 — Explore the Site Map
-
-Burp Suite automatically mapped the web application structure.
-
-Discovered:
-
-- REST API endpoints
-- Static resources
-- JavaScript files
-- Application routes
-
-**Screenshot**
-
-![Site Map](screenshots/08-site-map.png)
-
----
-
-## Step 9 — Base64 Encoding
-
-Used Burp Decoder to convert plaintext into Base64.
-
-Example:
-
-```
-Hello world
-```
-
-↓
-
-```
-SGVsbG8gd29ybGQ=
-```
-
-**Screenshot**
-
-![Base64 Encode](screenshots/09-base64-encode.png)
-
----
-
-## Step 10 — Base64 Decoding
-
-Decoded the Base64 string back into readable plaintext.
-
-**Screenshot**
-
-![Base64 Decode](screenshots/10-base64-decode.png)
-
----
-
-## Step 11 — Compare HTTP Requests
-
-Used Burp Comparer to identify differences between two HTTP requests.
-
-Compared:
-
-- Request headers
-- Host values
-- Request length
-- Request structure
-
-**Screenshot**
-
-![Comparer](screenshots/11-comparer.png)
-
----
-
-# 🧠 Skills Demonstrated
-
-- Web Application Security Testing
-- Burp Suite Community Edition
-- Proxy Configuration
-- HTTP Request Analysis
-- HTTP Response Analysis
-- Request Replay
-- REST API Inspection
-- Web Application Enumeration
-- Base64 Encoding
-- Base64 Decoding
-- HTTP Request Comparison
-- Docker Container Deployment
-
----
-
-# 📚 Key Learning Outcomes
-
-- Learned how an intercepting proxy works.
-- Understood HTTP request and response structure.
-- Practiced capturing login requests.
-- Explored web application endpoints.
-- Replayed requests using Burp Repeater.
-- Used Burp Decoder for encoding and decoding.
-- Compared HTTP requests using Burp Comparer.
-- Built practical experience with web application security testing.
+# 🚀 Future Improvements
+
+- Perform Intruder attacks
+- Explore Sequencer
+- Practice Decoder with JWT Tokens
+- Use Burp Extensions (BApp Store)
+- Test additional OWASP Juice Shop vulnerabilities
+- Practice PortSwigger Web Security Academy labs
 
 ---
 
 # ⚠️ Disclaimer
 
-This project was conducted in a controlled laboratory environment using **OWASP Juice Shop**, an intentionally vulnerable application created for security awareness and training.
+This repository is intended for **educational purposes only**.
 
-No unauthorized systems or production environments were tested.
+All testing was performed against **OWASP Juice Shop**, an intentionally vulnerable application created for learning and security awareness.
 
----
-
-# 📌 Future Improvements
-
-- Intruder demonstrations
-- Manual parameter manipulation
-- SQL Injection testing (lab only)
-- Cross-Site Scripting (XSS) testing
-- Directory enumeration
-- Authentication testing
-- Session analysis
-- JWT analysis
-- Burp Extensions
+Do **not** perform these techniques against systems you do not own or have explicit permission to test.
 
 ---
 
-# 📖 References
+# 👨‍💻 Author
 
-- OWASP Juice Shop
-- Burp Suite Community Edition
-- OWASP Web Security Testing Guide
+**Jaison Jerald**
+
+- GitHub: https://github.com/jaisonjerald
+- LinkedIn: https://www.linkedin.com/in/jaison-jerald-79b9271b9/
 
 ---
 
-## ⭐ If you found this project useful, consider giving the repository a star!
+⭐ **If you found this repository helpful, consider giving it a star!**
