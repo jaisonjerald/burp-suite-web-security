@@ -153,6 +153,57 @@ Throughout this project, I explored Burp Suite's core features, including interc
 - HTTP Traffic Inspection
 
 ---
+---
+
+# 🎓 Key Learning Outcomes
+
+During this lab, I gained practical experience with Burp Suite Community Edition by working in a controlled environment using OWASP Juice Shop.
+
+### Burp Suite Proxy
+- Configured Firefox to route traffic through Burp Suite.
+- Intercepted HTTP requests and responses.
+- Observed how browsers communicate with web applications.
+
+### HTTP History
+- Captured and analyzed HTTP GET and POST requests.
+- Examined request headers, response headers, cookies, and status codes.
+- Identified login requests and application API calls.
+
+### Site Map
+- Explored the application's structure.
+- Discovered available endpoints and resources.
+- Understood how Burp automatically maps visited content.
+
+### Repeater
+- Sent captured requests multiple times.
+- Modified request data safely.
+- Compared server responses after changing inputs.
+
+### Decoder
+- Performed Base64 encoding and decoding.
+- Understood how common encoding formats appear in web traffic.
+
+### Comparer
+- Compared multiple HTTP requests.
+- Identified differences between requests.
+- Learned how request comparison assists during testing.
+
+### Docker & OWASP Juice Shop
+- Pulled and ran OWASP Juice Shop using Docker.
+- Verified container status and accessed the application locally.
+- Used an intentionally vulnerable application for safe learning.
+
+### Web Security Concepts
+- HTTP Methods (GET, POST)
+- Request Headers
+- Response Headers
+- Cookies
+- Status Codes
+- JSON Requests
+- Proxy Interception
+- Traffic Analysis
+
+---
 
 # 📂 Repository Structure
 
